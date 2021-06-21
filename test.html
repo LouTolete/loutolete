@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEST SITE</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\lou.franzeska.tolete\Desktop\html\css\test.css">
+    <script src="eme.js"></script>
+   </head>
+ <body> 
+      <p class="six">The Readers Haven</p>
+    <header> 
+      <div class="slideshow-container">
+                      <div class="mySlides fade">
+                          <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\books4.jfif" class="image2">
+                            <div class="text"><h1>A PLACE THAT HAS IT ALL!</h1>Come and enjoy some good quality books together with your favorite macchiato here at THE READERS HAVEN where we provide every reader with their own reading place, some good coffee and the best quality of books in town!! <br><br>WHAT ARE YOU WAITING FOR?! COME ON DOWN TODAY AND WILL SAVE YOU A SEAT!</div>
+                      </div>
+
+                    <div class="mySlides fade">
+                        <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\books7.jpg" class="image2">
+                          <div class="text"><h1>DONT WORRY!!! WE HAVE IT!!</h1>We, here at the THE READERS HAVEN has a vast book collection wherein different readers may look from different varieties from our best sellers to what the readers really need!<br><br>SO, COME AND START YOUR JOURNEY WITH US TODAY TO EXPERIENCE THIS FIRST HAND!!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\books2.jpg" class="image2">
+                      <div class="text"><h1>COME ALONE, LEAVE WITH A NEW LESSON!!</h1>It is the sole purpose of THE READERS HAVEN to introduce every reader to a new lesson which will be very useful to them in the future<br><br></div>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 9000);
+        }
+        </script>
+
+            </header>
+              <section>
+                <a href='#'><p class="Books" style="max-width:50px; max-height:50px; margin-top:5px; margin-left:20px;">CART</p><span>0</span></a>
+              <article>
+                <div class="flex-container">
+               <div class="one">
+              <div class="card">
+                <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\harry.jpg" alt="Book" style="width:100px">
+                <h6 style="margin-top: 10px;">Harry Potter</h6>
+                <p style="margin-top: -40px; font-size: 11px;">Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives.<br><br>$19.99<br><br>
+                <button class="botones" onclick= "myFunction()">Add to Cart</button></p>
+              </div>
+              </div>
+              <div><div class="card">
+                <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\twilight.jpg" alt="Book" style="width:100px">
+                <h6 style="margin-top: 10px; ">Twilight: Breaking Dawn</h6>
+                <p style="margin-top: -45px; font-size: 10px;">Bella Swan is a seventeen-year-old introvert girl who moved<br><br>$29.99<br><br>
+                <button class="botones" onclick= "myFunction()">Add to Cart</button></p>
+              </div>
+              </div>
+              <div><div class="card">
+                <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\percy.jfif" alt="Book" style="width:100px">
+                <h6 style="margin-top: 13px; ">Lightning Thief</h6>
+                <p style="margin-top: -46px; font-size: 11px;">Percy Jackson is a good kid, but he can't seem to focus on his schoolwork or control his temper.<br><br>$10.98<br><br>
+                <button class="botones" onclick= "myFunction()">Add to Cart</button></p>
+              </div>
+              </div>
+              <div><div class="card">
+                <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\bible.jpg" alt="Book" style="width:100px">
+                <h6 style="margin-top: 10px; ">New Testament</h6>
+                <p style="margin-top: -40px; font-size: 11px;">This substantial introduction explores the origin and character of the New Testament writings.<br><br><br>$9.99<br><br><br><br><br>
+                <button class="botones" onclick= "myFunction()">Add to Cart</button></p>
+              </div>
+              </div>
+              <div><div class="card">
+                <img src="C:\Users\lou.franzeska.tolete\Desktop\html\photo\godfather.jpg" alt="Book" style="width:100px">
+                <h6 style="margin-top: 10px; ">The God Father</h6>
+                <p style="margin-top: -40px; font-size: 11px;">The famous book cover art for the bestseller The Godfather was designed by S. Neil Fujita.<br><br>$52.99<br><br>
+                <button class="botones" onclick= "myFunction()">Add to Cart</button></p>
+              </div>
+              </div>
+            </div>
+             
+              <script>
+                function myFunction() 
+                {
+                 alert("Hello! Item added to cart!");
+                }  
+              </script>
+
+              
+                
+          </article>
+        </section>
+
+        <footer>
+            <p>For future reference, you can contact us at 049-549-3443</p>
+            <p>all rights reserved.</p>
+        </footer>
+    </body>
+</html>
+
